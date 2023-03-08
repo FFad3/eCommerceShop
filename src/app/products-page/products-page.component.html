@@ -1,0 +1,14 @@
+<div class="container">
+  <ul>
+    <li>pageNumber={{data.pageNumber}}</li>
+    <li>pageSize={{data.pageSize}}</li>
+    <li>totalPages={{data.totalPages}}</li>
+    <li>itemsCount={{data.itemsCount}}</li>
+    <li>hasPreviousPage={{data.hasPreviousPage}}</li>
+    <li>hasNextPage={{data.hasNextPage}}</li>
+  </ul>
+  
+  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+    <product-card [item]="item" *ngFor="let item of data.items"></product-card>
+  </div>
+</div>
