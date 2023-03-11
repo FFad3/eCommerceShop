@@ -4,4 +4,6 @@
 }
 .card:hover{
     transform: scale(1.04);
+    cursor: pointer;
+    filter: drop-shadow(4px 4px 20px #ffff);
 }
